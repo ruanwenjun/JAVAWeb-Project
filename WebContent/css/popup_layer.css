@@ -1,0 +1,17 @@
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+a{text-decoration:none;}
+.clr{clear:both;overflow:hidden;height:0;}
+a.closeBtn{position:absolute;top:10px;right:10px;display:block;width:60px;padding:4px 0;text-align:center;background:#fff;border:1px solid #85B6E2;color:#333;}
+a.closeBtn:hover{color:#fff;border:1px solid #85B6E2;background:#85B6E2;}
+body{padding:10px 20px 50px;}
+h1{color:#85B6E2;text-align:center;padding-top:20px;font-size:18px;}
+
+/* blk */
+.blk{width:700px;height:300px;position:relative;}
+
+.blk .main{height:300px;overflow:auto; border-left:2px solid #85B6E2;border-right:2px solid #85B6E2;position:relative;background:#fff;border:2px solid #AFD1F3;border-radius:8px;}
+.blk .main h2{font:bold 16px "Microsoft YaHei";padding:10px 20px 2px;color:#85B6E2;}
+
+
+* html .popup_iframe{width:expression(this.previousSibling.style.width);height:expression(this.previousSibling.style.height);}

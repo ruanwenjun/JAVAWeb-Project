@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2013 dhcc.com.cn. All rights reserved.
+ * Support: http://www.dhcc.com.cn
+ * License: http://www.dhcc.com.cn/license
+ * 
+ * Style - Login
+ * Version: 3.0
+ */
+
+/* ---------- Login ---------- */
+
+div.login .wrap {
+	margin-bottom: 10px;
+	border: 2px solid #f2f2f2;
+}
+
+div.login .main {
+	border: 1px solid #d7d7d7;
+}
+
+div.login .title {
+	height: 40px;
+	line-height: 40px;
+	color: #d8d8d8;
+	font-family: "Microsoft YaHei";
+	border-bottom: 1px dotted #ededed;
+}
+
+div.login .title strong {
+	padding: 0px 10px;
+	color: #3164af;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+div.login table {
+	width: 100%;
+	margin-top: 10px;
+}
+
+div.login th {
+	width: 90px;
+	padding: 12px;
+	font-weight: normal;
+	text-align: right;
+}
+
+div.login .captcha {
+	width: 130px;
+	text-transform: uppercase;
+	ime-mode: disabled;
+}
+
+div.login .captchaImage {
+	margin-left: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+div.login .submit {
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 10px;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+	border: none;
+	background: url(../images/login.gif) 0px 0px no-repeat;
+}
+
+div.login .register {
+	background-color: #f3f3f3;
+}
+
+div.login .register dt {
+	line-height: 40px;
+	color: #cc062d;
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+}
+
+div.login .register dd {
+	line-height: 30px;
+	color: #565656
+}
+
+div.login .register dd a {
+	color: #3164af
+}

@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2013 dhcc.com.cn. All rights reserved.
+ * Support: http://www.dhcc.com.cn
+ * License: http://www.dhcc.com.cn/license
+ * 
+ * Style - Register
+ * Version: 3.0
+ */
+
+/* ---------- Register ---------- */
+
+div.register .wrap {
+	margin-bottom: 10px;
+	border: 2px solid #f2f2f2;
+}
+
+div.register .main {
+	padding-bottom: 20px;
+	border: 1px solid #d7d7d7;
+}
+
+div.register .title {
+	height: 40px;
+	line-height: 40px;
+	color: #d8d8d8;
+	font-family: "Microsoft YaHei";
+	border-bottom: 1px dotted #ededed;
+}
+
+div.register .title strong {
+	padding: 0px 10px;
+	color: #3164af;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+div.register table {
+	width: 640px;
+	float: left;
+	margin-top: 20px;
+}
+
+div.register th {
+	width: 80px;
+	padding: 12px;
+	font-weight: normal;
+	text-align: right;
+}
+
+div.register .captcha {
+	width: 130px;
+	text-transform: uppercase;
+	ime-mode: disabled;
+}
+
+div.register .captchaImage {
+	margin-left: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+div.register .submit {
+	width: 142px;
+	height: 37px;
+	line-height: 37px;
+	margin-top: 10px;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	blr: expression(this.hideFocus = true);
+	border: none;
+	background: url(../images/register.gif) 0px 0px no-repeat;
+}
+
+div.register .agreement {
+	height: 96px;
+	line-height: 24px;
+	padding: 0px 4px;
+	color: #999999;
+	overflow-y: scroll;
+	border: 1px solid #e6e6e6;
+}
+
+div.register .login {
+	width: 260px;
+	float: right;
+	padding: 20px;
+	border-bottom: 2px solid #f2f2f2;
+	border-left: 2px solid #f2f2f2;
+	background-color: #fff8db;
+}
+
+div.register .login dt {
+	line-height: 40px;
+	color: #bd5613;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+
+div.register .login dd {
+	line-height: 28px;
+	color: #565656
+}
+
+div.register .login dd a {
+	color: #bd5613
+}

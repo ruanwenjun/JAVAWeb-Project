@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+.nivoSlider {
+	position: relative;
+    background: #fff url(loading.gif) no-repeat 50% 50%;
+}
+
+.nivoSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+.nivoSlider a {
+	display: block;
+}
+
+a.nivo-imageLink {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 6;
+}
+
+.nivo-slice {
+	height: 100%;
+	display: block;
+	position: absolute;
+	z-index: 5;
+}
+
+.nivo-box {
+	display: block;
+	position: absolute;
+	z-index: 5;
+}
+
+.nivo-controlNav a {
+	position: relative;
+	z-index: 9;
+	cursor: pointer;
+}
+
+.nivo-controlNav a.active {
+	font-weight: bold;
+}
+
+.nivo-controlNav {
+	position: absolute;
+	right: 3px;
+	bottom: 7px;
+}
+
+.nivo-controlNav a {
+	width: 24px;
+	height: 10px;
+	display: block;
+	float: left;
+	margin-right: 4px;
+	overflow: hidden;
+	text-indent: -9999px;
+	filter: alpha(opacity = 60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	background-color: #000000;
+}
+
+.nivo-controlNav a.active {
+	background-color: #ffffff;
+}
+
+.nivo-directionNav a {
+	width: 45px;
+	height: 99px;
+	display: block;
+	position: absolute;
+	top: 30%;
+	z-index: 9;
+	cursor: pointer;
+	text-indent: -9999px;
+	filter: alpha(opacity = 30);
+	-moz-opacity: 0.3;
+	opacity: 0.3;
+	background: url(arrows.gif) no-repeat;
+}
+
+a.nivo-prevNav {
+	left: 0px;
+}
+
+a.nivo-nextNav {
+	right: 0px;
+	background-position: -46px 0px;
+}
+
+.nivo-caption {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	color: #ffffff;
+	font-family: Helvetica, Arial, sans-serif;
+	opacity: 0.4;
+	z-index: 8;
+	background: #000000;
+}
+
+.nivo-caption a {
+    color: #fff;
+    display: inline !important;
+    border-bottom: 1px dotted #fff;
+}
+
+.nivo-caption a:hover {
+    color: #fff;
+}
+
+.nivo-caption p {
+	padding: 5px;
+}
+
+.nivo-html-caption {
+    display: none;
+}

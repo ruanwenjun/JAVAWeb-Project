@@ -1,0 +1,525 @@
+@charset "utf-8";
+
+/*
+ * Copyright 2005-2013 dhcc.com.cn. All rights reserved.
+ * Support: http://www.dhcc.com.cn
+ * License: http://www.dhcc.com.cn/license
+ * 
+ * Style - Index
+ * Version: 3.0
+ */
+
+/* ---------- Index ---------- */
+
+div.index .slider {
+	height: 290px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+div.index .slider img {
+	width: 710px;
+	height: 290px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+div.index .newArticle {
+	width: 228px;
+	height: 172px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	border: solid 1px #e4e4e4;
+}
+
+div.index .newArticle .tab {
+	width: 300px;
+	height: 30px;
+	background-color: #f1f1f1;
+}
+
+div.index .newArticle .tab li {
+	width: 76px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	border-right: solid 1px #e4e4e4;
+}
+
+div.index .newArticle .tab li.current {
+	background-color: #ffffff;
+}
+
+div.index .newArticle .tabContent {
+	padding: 6px;
+}
+
+div.index .newArticle .tabContent li {
+	line-height: 26px;
+}
+
+div.index .hotBrand {
+	padding: 0px 10px 10px 10px;
+	background-color: #f1f1f1;
+}
+
+div.index .hotBrand .title {
+	height: 30px;
+	line-height: 30px;
+	color: #cacaca;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+}
+
+div.index .hotBrand .title strong {
+	margin-right: 10px;
+	color: #d31c31;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.index .hotBrand .title a {
+	float: right;
+	color: #999999;
+	font-weight: normal;
+}
+
+div.index .hotBrand li {
+	white-space: nowrap;
+	float: left;
+	margin-right: -1px;
+	margin-bottom: -1px;
+	_position: relative;
+	border: 1px solid #e4e4e4;
+	background-color: #ffffff;
+}
+
+div.index .hotBrand li a {
+	width: 97px;
+	height: 50px;
+	display: block;
+	overflow: hidden;
+	background: url(../images/index.gif) 0px 0px repeat-x;
+}
+
+div.index .hotBrand li a:hover {
+	height: 49px;
+	border-bottom: 1px solid #656565;
+}
+
+div.index .hotBrand li img {
+	width: 97px;
+	height: 50px;
+}
+
+div.index .hotProductCategory {
+	padding: 0px 10px 10px 10px;
+	margin-bottom: 10px;
+	background-color: #f1f1f1;
+}
+
+div.index .hotProductCategory .title {
+	height: 30px;
+	line-height: 30px;
+	color: #cacaca;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+}
+
+div.index .hotProductCategory .title strong {
+	margin-right: 10px;
+	color: #d31c31;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.index .hotProductCategory .title a {
+	float: right;
+	color: #999999;
+	font-weight: normal;
+}
+
+div.index .hotProductCategory .content {
+	border: 1px solid #e4e4e4;
+	background-color: #ffffff;
+}
+
+div.index .hotProductCategory table {
+	width: 100%;
+}
+
+div.index .hotProductCategory tr {
+	border-bottom: 1px solid #f1f1f1;
+}
+
+div.index .hotProductCategory tr.last {
+	border-bottom: none;
+}
+
+div.index .hotProductCategory th {
+	width: 90px;
+	height: 60px;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	border: 3px solid #ffffff;
+	background-color: #f8f8f8;
+}
+
+div.index .hotProductCategory tr:hover th {
+	background-color: #e4e4e4;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	div.index .hotProductCategory th {
+		height: 60px;
+	}
+}
+
+div.index .hotProductCategory td a {
+	line-height: 30px;
+	padding: 0px 10px;
+	color: #666666;
+	white-space: nowrap;
+}
+
+div.index .promotionProduct {
+	width: 228px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	border-left: solid 1px #e4e4e4;
+	border-right: solid 1px #e4e4e4;
+	border-bottom: solid 1px #e4e4e4;
+}
+
+div.index .promotionProduct .tab {
+	width: 300px;
+	height: 31px;
+}
+
+div.index .promotionProduct .tab li {
+	width: 114px;
+	height: 31px;
+	line-height: 31px;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	border-right: solid 1px #e4e4e4;
+	background: url(../images/index.gif) 0px -90px repeat-x;
+}
+
+div.index .promotionProduct .tab li.current {
+	height: 29px;
+	line-height: 29px;
+	border-top: solid 2px #ff830f;
+	background-color: #ffffff;
+	background-image: none;
+}
+
+div.index .promotionProduct .tabContent {
+	padding: 6px;
+}
+
+div.index .promotionProduct .tabContent li {
+	height: 94px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+div.index .promotionProduct .tabContent li.last {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+
+div.index .promotionProduct .tabContent .info {
+	line-height: 26px;
+	color: #a5a5a5;
+}
+
+div.index .promotionProduct .tabContent em {
+	color: #404040;
+	font-weight: bold;
+	font-style: normal;
+}
+
+div.index .promotionProduct .tabContent del {
+	color: #a5a5a5;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: line-through;
+}
+
+div.index .promotionProduct .tabContent strong {
+	color: #ff0000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.index .promotionProduct .tabContent span {
+	display: block;
+	clear: both;
+}
+
+div.index .promotionProduct .tabContent div img {
+	width: 50px;
+	height: 50px;
+	display: block;
+	float: left;
+	padding: 2px;
+	margin: 4px 4px 0px 0px;
+	border: 1px solid #e4e4e4;
+}
+
+div.index .promotionProduct .tabContent div div {
+	width: 156px;
+	line-height: 20px;
+	float: left;
+	overflow: hidden;
+}
+
+div.index .newReview {
+	margin-bottom: 10px;
+	overflow: hidden;
+	border: solid 1px #e4e4e4;
+}
+
+div.index .newReview .title {
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 10px;
+	color: #d31c31;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+	background-color: #f1f1f1;
+}
+
+div.index .newReview ul {
+	line-height: 28px;
+	padding: 2px 6px;
+}
+
+div.index .middleAd {
+	margin-bottom: 10px;
+}
+
+div.index .hotProduct {
+	margin-bottom: 10px;
+}
+
+div.index .hotProduct .title {
+	width: 260px;
+	height: 40px;
+	float: left;
+	margin-bottom: 10px;
+	/* background: url(../images/index.gif) 0px -150px no-repeat; */
+	background-color: #825996;
+}
+
+div.index .hotProduct .title strong {
+	line-height: 38px;
+	display: block;
+	float: left;
+	padding-left: 10px;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+
+div.index .hotProduct .title a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: right;
+}
+
+div.index .hotProduct .tab {
+	width: 690px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin-bottom: 10px;
+	overflow: hidden;
+	/* background: url(../images/index.gif) 0px -210px repeat-x; */
+	background-color: #825996;
+}
+
+div.index .hotProduct .tab li {
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	margin-top: 2px;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	
+
+}
+
+div.index .hotProduct .tab li.current {
+	font-weight: bold;
+	background-color: #825996;
+}
+
+div.index .hotProduct .hotProductAd {
+	width: 260px;
+	height: 343px;
+	float: left;
+}
+
+div.index .hotProduct .tabContent {
+	width: 950px;
+	float: left;
+	padding-left: 5px;
+	_padding-left: 2px;
+}
+
+div.index .hotProduct .tabContent li {
+	float: left;
+	margin-right: -1px;
+	margin-bottom: 10px;
+	_position: relative;
+	border:1px solid #e4e4e4;
+	margin-left: 14px;
+}
+
+div.index .hotProduct .tabContent li:hover {
+	filter: alpha(opacity = 70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+div.index .hotProduct .tabContent img {
+	width: 170px;
+	height: 170px;
+	display: block;
+}
+
+div.index .newProduct {
+	margin-bottom: 10px;
+}
+
+div.index .newProduct .title {
+	width: 260px;
+	height: 40px;
+	float: left;
+	margin-bottom: 10px;
+	/* background: url(../images/index.gif) 0px -270px no-repeat; */
+	background-color: #AB7156;
+
+}
+
+div.index .newProduct .title strong {
+	line-height: 38px;
+	display: block;
+	float: left;
+	padding-left: 10px;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+
+div.index .newProduct .title a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: right;
+}
+
+div.index .newProduct .tab {
+	width: 690px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin-bottom: 10px;
+	overflow: hidden;
+	/* background: url(../images/index.gif) 0px -330px repeat-x; */
+	background-color: #AB7156;
+}
+
+div.index .newProduct .tab li {
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	float: left;
+	margin-top: 2px;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	
+}
+
+div.index .newProduct .tab li.current {
+	font-weight: bold;
+	background-color: #AB7156;
+}
+
+div.index .newProduct .newProductAd {
+	width: 260px;
+	height: 343px;
+	float: left;
+}
+
+div.index .newProduct .tabContent {
+	width: 950px;
+	float: left;
+	padding-left: 5px;
+	_padding-left: 2px;
+}
+
+div.index .newProduct .tabContent li {
+	float: left;
+	margin-right: -1px;
+	margin-bottom: 10px;
+	_position: relative;
+	border:1px solid #e4e4e4;
+	margin-left: 14px;}
+
+div.index .newProduct .tabContent li:hover {
+	filter: alpha(opacity = 70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+div.index .newProduct .tabContent img {
+	width: 170px;
+	height: 170px;
+	display: block;
+}
+
+div.index .friendLink {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 30px;
+	margin-bottom: 10px;
+	color: #ffffff;
+	background-color: #c5c5c5;
+}
+
+div.index .friendLink dt {
+	float: left;
+	padding: 0px 30px;
+	background-color: #6e6e6e;
+}
+
+div.index .friendLink dd {
+	float: left;
+}
+
+div.index .friendLink a {
+	margin: 0px 10px;
+	color: #ffffff;
+}
+
+div.index .friendLink .more {
+	float: right;
+	background-color: #6e6e6e;
+}
