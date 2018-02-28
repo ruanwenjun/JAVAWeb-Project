@@ -1,0 +1,2 @@
+第一个JAVAWEB项目。跟着培训班视频做的，适合初学者练手。
+没有使用框架，sql文件夹里存放的是mysql建表，src文件夹里的是java代码，WEBCONTENT里的是页面。
