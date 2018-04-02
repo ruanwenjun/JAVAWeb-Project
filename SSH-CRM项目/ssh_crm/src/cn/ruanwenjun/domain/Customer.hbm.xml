@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.ruanwenjun.domain">
+	<class name="Customer" table="cust_customer">
+		<id name="cust_id" >
+			<generator class="native"></generator>
+		</id>
+		<property name="cust_name" ></property>
+		<property name="cust_linkman" ></property>
+		<property name="cust_mobile" ></property>
+		
+		<set name="linkmans" >
+			<key column="lkm_cust_id"></key>
+			<one-to-many class="Linkman" />
+		</set>
+		<set name="saleVists" >
+			<key column="visit_cust_id"></key>
+			<one-to-many class="SaleVisit" />
+		</set>
+		
+		
+		
+		<many-to-one name="cust_source" column="cust_source" class="BaseDict"></many-to-one>
+		<many-to-one name="cust_level" column="cust_level" class="BaseDict"></many-to-one>
+		<many-to-one name="cust_industry" column="cust_industry" class="BaseDict"></many-to-one>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<package name="ssh_crm" namespace="/" extends="struts-default">
+	
+		<!--=======================================拦截器==========================================================-->
+		<interceptors>
+		<!--注册拦截器  -->
+			<interceptor name="privilegeInterceptor" class="cn.ruanwenjun.web.interceptor.PrivilegeInterceptor"></interceptor>
+		<!--注册拦截器栈  -->
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="privilegeInterceptor">
+					<param name="excludeMethods">regist,login</param>
+				</interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<!--配置默认拦截器  -->
+		<default-interceptor-ref name="myStack"></default-interceptor-ref>
+		
+		
+		<!--========================================global-results==============================================================-->
+		<global-results>
+			<result name="toLogin" type="redirect">/login.jsp</result>
+		</global-results>
+		
+		
+		
+		
+		<!--=========================================Action==========================================================================-->
+		<!--与Spring整合之后这里的class填spring的bean中的name  -->
+		<action name="UserAction_*" class="userAction" method="{1}">
+			<result name="success" type="redirect">/</result>
+			<result name="loginError" >/login.jsp</result>
+			<result name="registError">/regist.jsp</result>
+			<result name="toIndex">/</result>			
+		</action>
+		
+		
+		<action name="CustomerAction_*" class="customerAction" method="{1}">
+			<result name="list">/jsp/customer/list.jsp</result>
+			<result name="toList" type="redirectAction">
+				<param name="actionName">CustomerAction_list</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="edit">/jsp/customer/edit.jsp</result>
+			<result name="industryCountList">/jsp/customer/industryCount.jsp</result>
+			<result name="error">/jsp/customer/list.jsp</result>
+		</action>
+		
+		
+		<action name="BaseDictAction" class="baseDictAction" method="execute"></action>
+		
+		
+		
+		<action name="LinkmanAction_*" class="linkmanAction" method="{1}">
+			<result name="toList" type="redirectAction">
+				<param name="actionName">LinkmanAction_list</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="list">/jsp/linkman/list.jsp</result>
+		</action>
+		
+		<action name="SaleVisitAction_*" class="saleVisitAction" method="{1}">
+			<result name="toList" type="redirectAction">
+				<param name="actionName">SaleVisitAction_list</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="list" >/jsp/salevisit/list.jsp</result>
+			<result name="edit" >/jsp/salevisit/edit.jsp</result>
+			
+		</action>
+		
+	</package>
+	
+	
+	
+	<!--将struts与spring整合，将action的创建交给spring容器  -->
+	<constant name="struts.objectFactory" value="spring"></constant>
+</struts>

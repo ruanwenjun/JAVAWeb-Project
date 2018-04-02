@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns="http://www.springframework.org/schema/beans" 
+		xmlns:aop="http://www.springframework.org/schema/aop" 
+		xmlns:context="http://www.springframework.org/schema/context" 
+		xmlns:tx="http://www.springframework.org/schema/tx" 
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd 
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd 
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd 
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd ">
+		
+		
+		
+	<!--配置Hibernate的信息  -->
+	<bean name="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>			
+		</property>
+		<!--将连接池注入sessionFactory  -->
+		<property name="dataSource" ref="dataSource"></property>
+		<!--引入orm元数据  -->
+		<property name="mappingDirectoryLocations" value="classpath:cn/ruanwenjun/domain"></property>
+	</bean>
+	
+	
+	<!--读取db.properties  -->
+	<context:property-placeholder location="classpath:db.properties"/>
+	<!--配置连接池  -->
+	<bean name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="jdbcUrl" value="${jdbc.Url}"></property>
+		<property name="driverClass" value="${jdbc.driverClass}"></property>
+		<property name="user" value="${jdbc.user}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+	</bean>
+	
+	
+	<!--配置核心事务管理器  -->
+	<bean name="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!--开启注解事务  -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
+	
+	
+	
+	<!--=====================================配置Action==========================================  -->
+	<bean name="userAction" class="cn.ruanwenjun.web.UserAction" scope="prototype">
+		<property name="us" ref="userService"></property>
+	</bean>
+	
+	<bean name="customerAction" class="cn.ruanwenjun.web.CustomerAction" scope="prototype">
+		<property name="cs" ref="customerService"></property>
+	</bean>
+	
+	<bean name="baseDictAction" class="cn.ruanwenjun.web.BaseDictAction" scope="prototype">
+		<property name="bds" ref="baseDictService"></property>
+	</bean>
+	
+	<bean name="linkmanAction" class="cn.ruanwenjun.web.LinkmanAction" scope="prototype">
+		<property name="lms" ref="linkmanService"></property>
+	</bean>
+	
+	<bean name="saleVisitAction" class="cn.ruanwenjun.web.SaleVisitAction" scope="prototype">
+		<property name="svs" ref="saleVisitService"></property>
+	</bean>
+	<!--=========================================配置Service======================================================  -->
+	<bean name="userService" class="cn.ruanwenjun.service.impl.UserServiceImpl">
+		<property name="dao" ref="userDao"></property>
+	</bean>
+	
+	<bean name="customerService" class="cn.ruanwenjun.service.impl.CustomerServiceImpl">
+		<property name="dao" ref="customerDao"></property>
+	</bean>
+	
+	<bean name="baseDictService" class="cn.ruanwenjun.service.impl.BaseDictServiceImpl">
+		<property name="bdd" ref="baseDictDao"></property>
+	</bean>
+	
+	<bean name="linkmanService" class="cn.ruanwenjun.service.impl.LinkmanServiceImpl">
+		<property name="dao" ref="linkmanDao"></property>
+	</bean>
+	
+	<bean name="saleVisitService" class="cn.ruanwenjun.service.impl.SaleVisitServiceImpl">
+		<property name="dao" ref="saleVisitDao"></property>
+	</bean>
+	
+	<!--==========================================配置Dao========================================  -->
+	<bean name="userDao" class="cn.ruanwenjun.dao.impl.UserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean name="customerDao" class="cn.ruanwenjun.dao.impl.CustomerDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean name="baseDictDao" class="cn.ruanwenjun.dao.impl.BaseDictDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean name="linkmanDao" class="cn.ruanwenjun.dao.impl.LinkmanDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean name="saleVisitDao" class="cn.ruanwenjun.dao.impl.SaleVisitDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+</beans>

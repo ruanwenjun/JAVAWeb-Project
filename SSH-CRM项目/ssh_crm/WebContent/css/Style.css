@@ -1,0 +1,60 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+DIV {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+P {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+SPAN {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+A {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+INPUT {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+TEXTAREA {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+SELECT {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+TABLE {
+	BORDER-COLLAPSE: collapse
+}
+A:link {
+	COLOR: #0055bb; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #0077bb; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.hidden {
+	DISPLAY: none
+}
+.display {
+	DISPLAY: block
+}
+.textbox {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 17px; BACKGROUND-COLOR: #fdfdfd
+}
+.textarea {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #fdfdfd
+}
+.button {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #f4f4f4 1px solid; BORDER-LEFT: #f4f4f4 1px solid; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: #888888 1px solid
+}
+.fileupload {
+	BORDER-RIGHT: #eeeeee 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #999999 1px solid; COLOR: #333333; BORDER-BOTTOM: #eeeeee 1px solid
+}
+.redinfo {
+	COLOR: #ff0000
+}

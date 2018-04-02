@@ -1,0 +1,87 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #2a8dc8
+}
+BODY {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+DIV {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+P {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+SPAN {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+INPUT {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+TEXTAREA {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+SELECT {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+A {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+.manageHead {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-WEIGHT: bold; BORDER-LEFT: #cccccc 1px solid; COLOR: #000000; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #f4f4f4
+}
+.manageHeadContent {
+	BORDER-RIGHT: #eeeeee 1px solid; BORDER-TOP: #eeeeee 1px solid; BORDER-LEFT: #eeeeee 1px solid; COLOR: #333333; LINE-HEIGHT: 16pt; BORDER-BOTTOM: #eeeeee 1px solid; BACKGROUND-COLOR: #fdfdfd
+}
+.manageTitle {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #fbfbfb; TEXT-ALIGN: right
+}
+.manageMain {
+	PADDING-LEFT: 10px; FONT-WEIGHT: bold; COLOR: #0055bb; HEIGHT: 28px; BACKGROUND-COLOR: #eeeeee
+}
+.productHead {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-WEIGHT: bold; BORDER-LEFT: #cccccc 1px solid; WIDTH: 80px; CURSOR: hand; COLOR: #0055bb; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee; TEXT-ALIGN: center
+}
+.productHeadClick {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-WEIGHT: bold; BORDER-LEFT: #999999 1px solid; WIDTH: 80px; CURSOR: hand; COLOR: #000000; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #8fcfff; TEXT-ALIGN: center
+}
+.labelParent {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; COLOR: #0055bb; PADDING-TOP: 5px
+}
+.menuBig {
+	BORDER-RIGHT: #d8d0c8 0px solid; BORDER-TOP: #d8d0c8 0px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; BORDER-LEFT: #d8d0c8 0px solid; CURSOR: hand; COLOR: #ffffff; BORDER-BOTTOM: #d8d0c8 0px solid; HEIGHT: 24px; BACKGROUND-COLOR: #666666
+}
+.menuSmall {
+	BORDER-BOTTOM: #dddddd 1px solid; BACKGROUND-COLOR: #eeeeee
+}
+A.menuTop {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #dddddd 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #dddddd 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.orderTitle {
+	FONT-WEIGHT: bold; COLOR: #ffffff; BACKGROUND-COLOR: #666666; TEXT-ALIGN: center
+}
+.orderFlagTitle {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; COLOR: #ffffff; HEIGHT: 24px; BACKGROUND-COLOR: #666666
+}
+.noDataDiv {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 15px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 15px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 15px; BORDER-LEFT: #cccccc 1px solid; COLOR: #ff0000; PADDING-TOP: 15px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.yes {
+	FONT-WEIGHT: bold; COLOR: #0077bb
+}
+.no {
+	FONT-WEIGHT: bold; COLOR: #ff0000
+}
+.textbox {
+	HEIGHT: 15px
+}
+.textarea {
+	
+}
+.button {
+	HEIGHT: 22px
+}
+.fileupload {
+	HEIGHT: 21px
+}

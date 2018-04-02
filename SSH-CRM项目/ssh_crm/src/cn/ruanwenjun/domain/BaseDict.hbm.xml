@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.ruanwenjun.domain">
+	<class name="BaseDict" table="base_dict">
+		<id name="dict_id" >
+			<generator class="uuid"></generator>
+		</id>
+		<property name="dict_type_code" ></property>
+		<property name="dict_type_name" ></property>
+		<property name="dict_item_name" ></property>
+		<property name="dict_item_code" ></property>
+		<property name="dict_sort" ></property>
+		<property name="dict_enable" ></property>
+		<property name="dict_memo" ></property>
+								
+	</class>
+</hibernate-mapping>
