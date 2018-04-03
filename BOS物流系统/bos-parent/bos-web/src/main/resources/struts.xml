@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<!-- 
+		<constant name="struts.objectFactory" value="spring"/>
+	 -->
+	<package name="basicstruts2" extends="struts-default">
+		<interceptors>
+			<!--注册拦截器  -->
+			<interceptor name="userLoginInterceptor" class="cn.ruanwenjun.web.interceptor.UserLoginInterceptor">
+				<param name="excludeMethods">login</param>
+			</interceptor>
+			<!--注册拦截器栈  -->
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="userLoginInterceptor"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<!--配置默认拦截器栈  -->
+		<default-interceptor-ref name="myStack"/>
+		
+		<!--全局结果集  -->
+		<global-results>
+			<result name="login">/login.jsp</result>
+			<result name="unauthorized">/unauthorized.jsp</result>
+		</global-results>
+		
+		<!--全局异常捕获  -->
+		<global-exception-mappings>
+			<exception-mapping result="unauthorized" exception="org.apache.shiro.authz.UnauthorizedException"></exception-mapping>
+		</global-exception-mappings>
+	
+	
+		<!-- 需要进行权限控制的页面访问 -->
+		<action name="page_*_*">
+			<result type="dispatcher">/WEB-INF/pages/{1}/{2}.jsp</result>
+		</action>
+		<!--用户管理  -->
+		<action name="userAction_*" class="userAction" method="{1}">
+			<result name="home">/index.jsp</result>
+			<result name="add">/WEB-INF/pages/admin/userinfo.jsp</result>
+			<result name="success" >/WEB-INF/pages/admin/userlist.jsp</result>
+		</action>
+		<!--取派员 管理 -->
+		<action name="staffAction_*" class="staffAction" method="{1}">
+			<result name="success">/WEB-INF/pages/base/staff.jsp</result>
+		</action>
+		<!--区域管理 -->
+		<action name="regionAction_*" class="regionAction" method="{1}">
+		</action>
+		<!--分区管理 -->
+		<action name="subareaAction_*" class="subareaAction" method="{1}">
+			<result name="success">/WEB-INF/pages/base/subarea.jsp</result>
+		</action>
+		<!--定区管理 -->
+		<action name="decidedzoneAction_*" class="decidedzoneAction" method="{1}">
+			<result name="success">/WEB-INF/pages/base/decidedzone.jsp</result>
+		</action>
+		<!--通知单管理 -->
+		<action name="noticebillAction_*" class="noticebillAction" method="{1}">
+			<result name="success">/WEB-INF/pages/qupai/noticebill_add.jsp</result>
+		</action>
+		<!--工单管理 -->
+		<action name="workordermanageAction_*" class="workordermanageAction" method="{1}">
+		</action>
+		<!--权限管理 -->
+		<action name="functionAction_*" class="functionAction" method="{1}">
+			<result name="success">/WEB-INF/pages/admin/function.jsp</result>
+		</action>
+		<!--权限管理 -->
+		<action name="roleAction_*" class="roleAction" method="{1}">
+			<result name="success">/WEB-INF/pages/admin/role.jsp</result>
+		</action>
+	</package>
+</struts>

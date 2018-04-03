@@ -1,0 +1,7 @@
+{                                                      
+	"total":100,	
+	"rows":[ 
+		{"id":"customer001","name":"小虎","station":"国家电网"},
+		{"id":"customer002","name":"小龙","station":"中国移动"}
+	]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.ruanwenjun.domain.Workbill" table="qp_workbill" >
+        <id name="id" type="java.lang.String">
+            <column name="id" length="32" />
+            <generator class="uuid" />
+        </id>
+        <many-to-one name="noticebill" class="cn.ruanwenjun.domain.Noticebill" fetch="select">
+            <column name="noticebill_id" length="32" />
+        </many-to-one>
+        <many-to-one name="staff" class="cn.ruanwenjun.domain.Staff" fetch="select">
+            <column name="staff_id" length="32" />
+        </many-to-one>
+        <property name="type" type="java.lang.String">
+            <column name="type" length="20" />
+        </property>
+        <property name="pickstate" type="java.lang.String">
+            <column name="pickstate" length="20" />
+        </property>
+        <property name="buildtime" type="java.sql.Timestamp">
+            <column name="buildtime" length="0" not-null="true" />
+        </property>
+        <property name="attachbilltimes" type="java.lang.Integer">
+            <column name="attachbilltimes" />
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="remark" />
+        </property>
+    </class>
+</hibernate-mapping>

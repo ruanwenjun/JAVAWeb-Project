@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.ruanwenjun.domain.Region" table="bc_region" >
+        <id name="id" type="java.lang.String">
+            <column name="id" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="province" type="java.lang.String">
+            <column name="province" length="50" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="city" length="50" />
+        </property>
+        <property name="district" type="java.lang.String">
+            <column name="district" length="50" />
+        </property>
+        <property name="postcode" type="java.lang.String">
+            <column name="postcode" length="50" />
+        </property>
+        <property name="shortcode" type="java.lang.String">
+            <column name="shortcode" length="30" />
+        </property>
+        <property name="citycode" type="java.lang.String">
+            <column name="citycode" length="30" />
+        </property>
+        <set name="subareas" inverse="true">
+            <key>
+                <column name="region_id" length="32" />
+            </key>
+            <one-to-many class="cn.ruanwenjun.domain.Subarea" />
+        </set>
+    </class>
+</hibernate-mapping>

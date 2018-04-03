@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.ruanwenjun.domain.Staff" table="bc_staff" >
+        <id name="id" type="java.lang.String">
+            <column name="id" length="32" />
+            <generator class="uuid" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="name" length="20" />
+        </property>
+        <property name="telephone" type="java.lang.String">
+            <column name="telephone" length="20" />
+        </property>
+        <property name="haspda" type="java.lang.String">
+            <column name="haspda" length="1" />
+        </property>
+        <property name="deltag" type="java.lang.String">
+            <column name="deltag" length="1" />
+        </property>
+        <property name="station" type="java.lang.String">
+            <column name="station" length="40" />
+        </property>
+        <property name="standard" type="java.lang.String">
+            <column name="standard" length="100" />
+        </property>
+        <set name="decidedzones" inverse="true">
+            <key>
+                <column name="staff_id" length="32" />
+            </key>
+            <one-to-many class="cn.ruanwenjun.domain.Decidedzone" />
+        </set>
+    </class>
+    <query name="staff.deleteBatch">
+    	UPDATE Staff SET deltag = '1' WHERE id =?
+    </query>
+</hibernate-mapping>

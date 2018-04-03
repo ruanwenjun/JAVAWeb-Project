@@ -1,0 +1,136 @@
+/* css reset */
+body{color:#000;background:#fff;font-size:12px;line-height:166.6%;text-align:center;}
+body,input,select,button{font-family:verdana}
+h1,h2,h3,select,input,button{font-size:100%}
+body,h1,h2,h3,ul,li,form,p,img{margin:0;padding:0;border:0}
+input,button,select,img{margin:0;line-height:normal}
+select{padding:1px}
+ul{list-style:none}
+select,input,button,button img,label{vertical-align:middle}
+header,footer,section,aside,nav,hgroup,figure,figcaption{display:block;margin:0;padding:0;border:none}
+a{text-decoration:none;color:#848585}
+a:hover{color:#000}
+.fontWeight{font-weight:700;}
+/* global */
+.unvisi{visibility:hidden}
+/* backgroundImage */
+.headerIntro,
+.loginIcoCurrent,
+.loginFuncNormal,
+.loginFuncMobile,
+.loginIcoNew,
+.themeText li,
+.domain,
+.whatAutologin,
+.btn,
+.dialogbox .hd .rc,
+.dialogbox .hd,
+.btn-moblogin,
+.btn-moblogin2,
+.loginFormIpt-over .loginFormTdIpt,
+.loginFormIpt-focus .loginFormTdIpt,
+.ico,
+.ext,
+.locationTestTitle,
+.verSelected,
+.servSelected,
+.locationTestTitleClose{background-image:url(../images/bg_grey.png)}
+.headerLogo,
+.headerIntro,
+.headerNav,
+.footerLogo,
+.footerNav,
+.loginIcoCurrent,
+.loginIcoNew,
+.loginFormTh,
+.loginFormTdIpt,
+.domain{position:absolute}
+/* ico */
+.ico-arr{display:inline-block;width:7px;height:12px;vertical-align:baseline;background-position:-160px -112px;}
+.ico-arr-d{background-position:-160px -110px;}
+.loginFormConf a:hover .ico-arr-d,
+.ico-arr-d-focus{background-position:-176px -110px;}
+*+html .ico-arr-d{background-position:-160px -112px;}
+*+html .loginFormConf a:hover .ico-arr-d,
+*+html .ico-arr-d-focus{background-position:-176px -112px;}
+/* header */
+.header{width:800px;height:64px;position:relative;margin:0 auto;z-index:2;overflow:hidden;}
+.headerLogo{top:17px;left:0px}
+.headerIntro{height:28px;width:144px;display:block;background-position:0 -64px;top:17px;left:144px}
+.headerNav{top:21px;right:0px;width:300px;text-align:right}
+.headerNav a{margin-left:13px}
+/* main */
+.main{height:440px;overflow:hidden;margin:0 auto;background:#fff;}
+.main-inner{width:900px;height:440px;overflow:visible;margin:0 auto;position:relative;clear:both}
+.themeLink{height:274px;width:430px;display:block;outline:0;}
+.themeText{margin-left:26px;}
+.themeText li{line-height:22px;-line-height:24px;height:24px;color:#858686;text-indent:12px;background-position:-756px -72px;background-repeat:no-repeat}
+.themeText li a{color:#005590;text-decoration:underline;}
+.login{width:338px;height:388px;overflow:hidden;float:right;margin-right:200px;margin-top:24px;background:#fff;border:1px solid #b7c2c9;_display:inline;text-align:left;position:relative;z-index:2;border-radius:2px;}
+.login,
+.unishadow{box-shadow:0px 1px 3px 0 rgba(0,0,0,0.2);}
+.loginFunc{width:338px;height:49px;overflow:hidden;clear:both;}
+.loginFuncNormal,.loginFuncMobile{width:100%;height:49px;overflow:hidden;position:relative;line-height:46px;font-weight:700;border-right:1px #b7c2c9 solid;background-position:0 0;float:left;font-size:14px;text-align:center;line-height:48px;background-repeat:repeat-x;color:#333;cursor:pointer;}
+.loginFuncMobile{background-position:0px 0px;width:100%;border-right:none;}
+.loginIcoCurrent{width:24px;height:24px;left:26px;top:9px;display:none;}
+.loginIcoNew{width:21px;height:10px;font-size:0;background-position:-684px 0;left:135px;top:12px;}
+.tab-1 .loginFuncNormal,
+.tab-2 .loginFuncMobile{background:none;}
+.tab-2 .loginFuncMobile .loginIcoCurrent,
+.tab-1 .loginFuncNormal .loginIcoCurrent,
+.tab-2 #extMobLogin,
+.tab-1 #extText,
+.tab-11 #extVerSelect,
+.tab-22 #extMobLogin2,
+.tab-2 #lfBtnReg2,
+.tab-1 #lfBtnReg1,
+.tab-2 .loginFormThMob{display:block;}
+.tab-2 #lfVerSelect,
+.tab-2 #extVerSelect,
+.tab-22 #extMobLogin,
+.tab-11 #extText,
+.tab-2 #extText,
+.tab-2 #lfBtnReg,
+.tab-1 #lfBtnReg2,
+.tab-22 #lfBtnMoblogin,
+.tab-2 .loginFormThAcc{display:none;}
+/* form */
+.loginForm{position:relative;height:339px;overflow:hidden;}
+.loginFormIpt{position:relative;height:33px;line-height:33px;margin-top:0px;margin-left:42px;clear:both;width:253px;border:1px solid #bac5d4;border-bottom-color:#d5dbe2;border-right-color:#d5dbe2;border-radius:2px;}
+.loginFormIpt-over{border-color:#a6b4c9;border-bottom-color:#bac5d4;border-right-color:#bac5d4;}
+.loginFormIpt-focus .loginFormTdIpt,
+.loginFormIpt-over .loginFormTdIpt{background-position:0 -160px;}
+.loginFormIpt-focus{border-color:#60a4e8;border-bottom-color:#84b4fc;border-right-color:#84b4fc;}
+.loginFormIpt-focus .placeholder{color:#b4c0d2;}
+.loginFormIptWiotTh{height:35px;border:none;margin-top:19px;width:255px;}
+.loginFormTh{width:36px;}
+.loginFormThMob{display:none;}
+.loginFormTdIpt{width:237px;padding:7px 8px 6px 8px;border:1px solid #838383;height:20px;top:0;left:0;line-height:20px;font-size:16px;font-weight:700;background-color:#eef3f8;border:none;font-family:verdana;line-height:17px;color:#92a4bf;}
+.loginFormTdIpt:focus{outline:0;}
+.loginFormTdIpt-focus{color:#333;font-weight:700;}
+.showPlaceholder .placeholder{visibility:visible;cursor:text;}
+.placeholder{color:#92a4bf;font-size:14px;text-indent:10px;position:absolute;left:0;top:0;visibility:hidden;background:none;}
+.domain{width:92px;height:33px;background-position:0 -112px;line-height:999em;overflow:hidden;display:block;right:0;top:0px;}
+.loginFormCheck{height:14px;line-height:14px;color:#555;margin-left:42px;margin-top:19px;clear:both;width:255px;position:relative;z-index:1;}
+.loginFormCheckInner{height:14px;width:150px;float:left;}
+.forgetPwdLine{height:18px;line-height:18px;margin-left:42px;clear:both;width:253px;text-align:right;margin-top:8px;}
+.forgetPwd{color:#848585;}
+.forgetPwd:hover{color:#333;}
+.loginFormCbx{width:13px;height:13px;padding:0;overflow:hidden;margin:0;}
+.loginFormSslText{font-family:simsun}
+.btn{float:left;height:35px;text-align:center;cursor:pointer;border:0;padding:0;font-weight:700;font-size:14px;display:inline-block;vertical-align:baseline;line-height:35px;outline:0;}
+.btn-login{width:102px;background-position:0 -208px;color:#fff;float:right;}
+.btn-login-hover{background-position:0 -256px;}
+.btn-login-active{background-position:0 -304px}
+.btn-reg{width:102px;background-position:-112px -208px;color:#555;float:right;}
+.btn-reg:hover{color:#555}
+.btn-reg-hover{background-position:-112px -256px;color:#555}
+.btn-reg-active{background-position:-112px -304px;color:#555}
+.btn-moblogin2{width:202px;height:37px;text-align:center;font-size:14px;background-position:-396px -288px;background-color:#fff;margin-top:30px;float:none;margin-left:46px;}
+.loginFormConf{height:12px;line-height:12px;margin-left:42px;margin-top:35px;clear:both;width:255px;position:relative;color:#848585;z-index:1;}
+.loginFormVer{float:left;width:130px;}
+.loginFormService{float:right;width:120px;text-align:right;}
+.loginFormVerList{width:81px;position:absolute;padding:1px;background:#fff;border:1px solid #b7c2c9;top:-5px;top:-4px;left:33px;display:none;}
+.loginFormVerList li a{height:22px;line-height:22px;width:81px;overflow:hidden;color:#848585;display:block;text-indent:22px;}
+.loginFormVerList li a:hover{background-color:#eef3f8;}
+.loginFormVerList li a.verSelected{background-position:-250px -58px;background-repeat:no-repeat;color:#333;}

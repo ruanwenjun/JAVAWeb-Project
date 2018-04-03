@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.ruanwenjun.domain.Function" table="auth_function" >
+        <id name="id" type="java.lang.String">
+            <column name="id" length="32" />
+            <generator class="uuid" />
+        </id>
+        <many-to-one name="parentFunction" class="cn.ruanwenjun.domain.Function" fetch="select">
+            <column name="pid" length="32" />
+        </many-to-one>
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="code" type="java.lang.String">
+            <column name="code" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="page" type="java.lang.String">
+            <column name="page" />
+        </property>
+        <property name="generatemenu" type="java.lang.String">
+            <column name="generatemenu" />
+        </property>
+        <property name="zindex" type="java.lang.Integer">
+            <column name="zindex" />
+        </property>
+        <set name="roles" inverse="true" table="role_function" >
+            <key>
+                <column name="function_id" length="32" not-null="true" />
+            </key>
+            <many-to-many entity-name="cn.ruanwenjun.domain.Role">
+                <column name="role_id" length="32" not-null="true" />
+            </many-to-many>
+        </set>
+        <set name="children" lazy="false" inverse="true">
+            <key>
+                <column name="pid" length="32" />
+            </key>
+            <one-to-many class="cn.ruanwenjun.domain.Function" />
+        </set>
+    </class>
+</hibernate-mapping>

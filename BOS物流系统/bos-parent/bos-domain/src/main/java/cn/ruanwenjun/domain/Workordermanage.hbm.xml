@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.ruanwenjun.domain.Workordermanage" table="qp_workordermanage" >
+        <id name="id" type="java.lang.String">
+            <column name="id" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="arrivecity" type="java.lang.String">
+            <column name="arrivecity" length="20" />
+        </property>
+        <property name="product" type="java.lang.String">
+            <column name="product" length="20" />
+        </property>
+        <property name="num" type="java.lang.Integer">
+            <column name="num" />
+        </property>
+        <property name="weight" type="java.lang.Double">
+            <column name="weight" precision="22" scale="0" />
+        </property>
+        <property name="floadreqr" type="java.lang.String">
+            <column name="floadreqr" />
+        </property>
+        <property name="prodtimelimit" type="java.lang.String">
+            <column name="prodtimelimit" length="40" />
+        </property>
+        <property name="prodtype" type="java.lang.String">
+            <column name="prodtype" length="40" />
+        </property>
+        <property name="sendername" type="java.lang.String">
+            <column name="sendername" length="20" />
+        </property>
+        <property name="senderphone" type="java.lang.String">
+            <column name="senderphone" length="20" />
+        </property>
+        <property name="senderaddr" type="java.lang.String">
+            <column name="senderaddr" length="200" />
+        </property>
+        <property name="receivername" type="java.lang.String">
+            <column name="receivername" length="20" />
+        </property>
+        <property name="receiverphone" type="java.lang.String">
+            <column name="receiverphone" length="20" />
+        </property>
+        <property name="receiveraddr" type="java.lang.String">
+            <column name="receiveraddr" length="200" />
+        </property>
+        <property name="feeitemnum" type="java.lang.Integer">
+            <column name="feeitemnum" />
+        </property>
+        <property name="actlweit" type="java.lang.Double">
+            <column name="actlweit" precision="22" scale="0" />
+        </property>
+        <property name="vol" type="java.lang.String">
+            <column name="vol" length="20" />
+        </property>
+        <property name="managerCheck" type="java.lang.String">
+            <column name="managerCheck" length="1" />
+        </property>
+        <property name="updatetime" type="java.util.Date">
+            <column name="updatetime" length="0" />
+        </property>
+    </class>
+</hibernate-mapping>
