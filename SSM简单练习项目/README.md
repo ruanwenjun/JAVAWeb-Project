@@ -1,0 +1,3 @@
+# 本项目是一个简单的springmvc+spring+mybatis练习项目
+
+只包含一个页面，资料里面有数据库建表脚本，config里面是配置文件，采用ecplise开发工具
