@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.ruanwenjun.ssm_crm.dao.ICustomerDao"> 
+	<select id="findBaseDictByCode" parameterType="String" resultType="BaseDict">
+		SELECT dict_item_name,dict_id from base_dict where dict_type_code = #{code}	
+	</select>
+	
+	
+	<select id="selectTotalCountByQueryVo" parameterType="QueryVo" resultType="Integer">
+		SELECT count(*) from customer
+		<where>
+			<if test="cust_name != null and cust_name !=''">
+				cust_name like "%"#{cust_name}"%"
+			</if>
+			<if test="cust_source != null and cust_source !=''">
+				AND cust_source = #{cust_source}
+			</if>
+			<if test="cust_industry != null and cust_industry !=''">
+				AND cust_industry = #{cust_industry}
+			</if>
+			<if test="cust_level != null and cust_level !=''">
+				AND cust_level = #{cust_level}
+			</if>
+		</where>
+	</select>
+	
+	<select id="selectCustomerListByQueryVo" parameterType="QueryVo" resultType="Customer">
+		SELECT * from customer
+		<where>
+			<if test="cust_name != null and cust_name !=''">
+				cust_name like "%"#{cust_name}"%"
+			</if>
+			<if test="cust_source != null and cust_source !=''">
+				AND cust_source = #{cust_source}
+			</if>
+			<if test="cust_industry != null and cust_industry !=''">
+				AND cust_industry = #{cust_industry}
+			</if>
+			<if test="cust_level != null and cust_level !=''">
+				AND cust_level = #{cust_level}
+			</if>
+		</where>
+		LIMIT #{start},#{rows}
+	</select>
+</mapper>
