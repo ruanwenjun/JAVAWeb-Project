@@ -1,13 +1,20 @@
 # 本仓库存放的是开始学习JAVA-WEB开发的一些练手项目，这些也适合初学者进行练习
+* [BOS物流系统](https://github.com/ruanwenjun/firstproject/tree/master/BOS物流系统)
+* [SSH-CRM项目](https://github.com/ruanwenjun/firstproject/tree/master/SSH-CRM项目)
+* [网络商城项目](https://github.com/ruanwenjun/firstproject/tree/master/网络商城项目)
+* [SSM简单整合](https://github.com/ruanwenjun/firstproject/tree/master/SSM简单整合)
+* [SSM简单练习项目--CRM](https://github.com/ruanwenjun/firstproject/tree/master/SSM简单练习项目--CRM)
 
-# 网络商城项目是第一个JAVAWEB项目，适合初学者练手。
+
+
+## 网络商城项目是第一个JAVAWEB项目，适合初学者练手。
 - 没有使用框架，采用servlet和JDBC进行开发
 - sql文件夹里存放的是mysql建表，src文件夹里的是java代码，WEBCONTENT里的是页面。
 - 实现了用户的注册、邮件激活、登陆、支付、商品的添加搜索和显示等功能
 
 ---
 
-# SSH_CRM 是一个简单的spring+struts2+Hibernate整合项目
+## SSH_CRM 是一个简单的spring+struts2+Hibernate整合项目
 是一个crm人员关系管理系统。
 
 管理员登陆系统可以对录入系统内的人员进行增删查改。
@@ -21,7 +28,7 @@
 
 ---
 
-# BOS物流是一个物流管理系统
+## BOS物流是一个物流管理系统
 
 - 采用Struts2与前台页面进行数据的交互
 - 使用sping注解的方式管理项目中的实体和事务的管理
@@ -34,6 +41,13 @@
 - 采用了一个MD5utils工具类进行密码的MD5加密
 - 采用ehcache框架进行了简单的登陆用户的权限缓存
 - 数据库使用的是mysql，最后将项目部署在linux上成功运行
+
+
+---
+## SSM简单练习项目---CRM是一个页面项目
+- 采用springMVC+spring+Mybatis框架整合开发
+- 没有过多的功能，只包含从数据库中分页条件查询、修改数据、删除数据
+- 用于熟悉SSM框架开发的流程
 
 
 ---

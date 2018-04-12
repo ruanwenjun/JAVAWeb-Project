@@ -4,6 +4,6 @@
 - 实现了用户的注册、邮件激活、登陆、支付、商品的添加搜索和显示等功能
 
 ## 项目页面如下：
-![image](https://github.com/ruanwenjun/firstproject/blob/master/%E7%BD%91%E7%BB%9C%E5%95%86%E5%9F%8E%E9%A1%B9%E7%9B%AE/images/index.png)
-![image](https://github.com/ruanwenjun/firstproject/blob/master/%E7%BD%91%E7%BB%9C%E5%95%86%E5%9F%8E%E9%A1%B9%E7%9B%AE/images/login.png)
-![image](https://github.com/ruanwenjun/firstproject/blob/master/%E7%BD%91%E7%BB%9C%E5%95%86%E5%9F%8E%E9%A1%B9%E7%9B%AE/images/item.png)
+![image](https://github.com/ruanwenjun/firstproject/blob/master/网络商城项目/images/index.png)
+![image](https://github.com/ruanwenjun/firstproject/blob/master/网络商城项目/images/login.png)
+![image](https://github.com/ruanwenjun/firstproject/blob/master/网络商城项目/images/item.png)

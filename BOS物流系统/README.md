@@ -12,7 +12,13 @@
 - 采用ehcache框架进行了简单的登陆用户的权限缓存
 - 数据库使用的是mysql，最后将项目部署在linux上成功运行
 
+## 项目页面如下：
+---
+![image](https://github.com/ruanwenjun/firstproject/blob/master/BOS物流系统项目/images/login.png)
 
+![image](https://github.com/ruanwenjun/firstproject/blob/master/BOS物流系统项目/images/index.png)
+
+![image](https://github.com/ruanwenjun/firstproject/blob/master/BOS物流系统项目/images/region.png)
 ---
 如果你想练习可以采用本项目，fork之后clone即可，觉得对你有帮助可以给一颗星>?<
 
