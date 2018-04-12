@@ -190,7 +190,7 @@
 							</span>
 						</div> <!-- /input-group -->
 					</li>
-					<li><a href="customer.action" class="active"><i
+					<li><a href="${pageContext.request.contextPath}/customer/list.action" class="active"><i
 							class="fa fa-edit fa-fw"></i> 客户管理</a></li>
 					<li><a href="salevisit.action"><i
 							class="fa fa-dashboard fa-fw"></i> 客户拜访</a></li>
@@ -406,7 +406,9 @@
 	<script src="<%=basePath%>js/sb-admin-2.js"></script>
 	
 	<script type="text/javascript">
+		//点击修改按钮的事件
 		function editCustomer(id) {
+			//采用ajax从后台获取数据
 			$.ajax({
 				type:"get",
 				url:"<%=basePath%>customer/edit.action",

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import cn.ruanwenjun.common.utils.Page;
 import cn.ruanwenjun.ssm_crm.domain.BaseDict;
@@ -25,7 +26,7 @@ public class CustomerController {
 	private ICustomerService customerService;
 
 	// 跳转到页面
-	@RequestMapping(value = "/customer/list.action")
+	@RequestMapping(value = "customer/list.action")
 	public String list(Model model, QueryVo vo) {
 		// 从字典表里查询客户来源002---fromType
 		// 所属行业001----industryType
@@ -82,4 +83,20 @@ public class CustomerController {
 
 		return "customer";
 	}
+	
+	//查询页面,根据ID查询客户然后返回给前台页面
+	@RequestMapping(value="customer/edit.action")
+	public @ResponseBody Customer toEdit(Integer id) {
+		Customer customer = customerService.findCustomerById(id);
+		return customer;
+	}
+	
+	//修改客户
+	@RequestMapping(value="customer/update.action")
+	public @ResponseBody String saveEdit(Customer customer) {
+		customerService.saveEdit(customer);
+		return "";
+	}
+	
+	
 }

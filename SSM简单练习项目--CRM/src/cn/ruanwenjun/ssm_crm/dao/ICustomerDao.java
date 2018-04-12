@@ -12,10 +12,14 @@ import cn.ruanwenjun.ssm_crm.domain.QueryVo;
 */
 public interface ICustomerDao {
 
-	List<BaseDict> findBaseDictByCode(String code);
+	public List<BaseDict> findBaseDictByCode(String code);
 
-	Integer selectTotalCountByQueryVo(QueryVo vo);
+	public Integer selectTotalCountByQueryVo(QueryVo vo);
 
-	List<Customer> selectCustomerListByQueryVo(QueryVo vo);
+	public List<Customer> selectCustomerListByQueryVo(QueryVo vo);
+
+	public Customer findCustomerById(Integer id);
+
+	public void saveEdit(Customer customer);
 
 }

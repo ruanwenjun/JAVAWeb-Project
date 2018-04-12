@@ -4,11 +4,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="cn.ruanwenjun.ssm_crm.dao.ICustomerDao"> 
+
+	<!--查询字典表  -->
 	<select id="findBaseDictByCode" parameterType="String" resultType="BaseDict">
 		SELECT dict_item_name,dict_id from base_dict where dict_type_code = #{code}	
 	</select>
 	
-	
+	<!--条件查询总数  -->
 	<select id="selectTotalCountByQueryVo" parameterType="QueryVo" resultType="Integer">
 		SELECT count(*) from customer
 		<where>
@@ -27,6 +29,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		</where>
 	</select>
 	
+	<!--条件查询列表  -->
 	<select id="selectCustomerListByQueryVo" parameterType="QueryVo" resultType="Customer">
 		SELECT * from customer
 		<where>
@@ -45,4 +48,26 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		</where>
 		LIMIT #{start},#{rows}
 	</select>
+	
+	<!--根据ID查询客户  -->
+	<select id="findCustomerById" parameterType="Integer" resultType="Customer">
+		SELECT * FROM customer WHERE cust_id = #{id}
+	</select>
+	
+	<!--更新客户  -->
+	<update id="saveEdit" parameterType="Customer" >
+		UPDATE customer 
+		<set>
+			cust_name = #{cust_name},
+			cust_source = #{cust_source},
+			cust_industry = #{cust_industry},
+			cust_level = #{cust_level},
+			cust_linkman = #{cust_linkman},
+			cust_phone = #{cust_phone},
+			cust_mobile = #{cust_mobile},
+			cust_zipcode = #{cust_zipcode},
+			cust_address = #{cust_address},
+		</set>
+		WHERE cust_id = #{cust_id}
+	</update>
 </mapper>
