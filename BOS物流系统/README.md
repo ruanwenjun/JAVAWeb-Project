@@ -12,6 +12,11 @@
 - 采用ehcache框架进行了简单的登陆用户的权限缓存
 - 数据库使用的是mysql，最后将项目部署在linux上成功运行
 
+如果你想练习可以采用本项目，fork之后clone即可，觉得对你有帮助可以给一颗星>?<
+
+bos.sql里面存放的是sql建表语句
+
+
 ## 项目页面如下：
 ---
 ![image](images/login.png)
@@ -20,6 +25,4 @@
 
 ![image](images/region.png)
 ---
-如果你想练习可以采用本项目，fork之后clone即可，觉得对你有帮助可以给一颗星>?<
 
-bos.sql里面存放的是sql建表语句
