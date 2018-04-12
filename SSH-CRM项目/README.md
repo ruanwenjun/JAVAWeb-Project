@@ -10,3 +10,9 @@
 - 在web层和dao层都提取了公共代码封装到BaseAction和BaseDao中，提高了代码的复用，同时按照OO设计原则，针对接口编程，而不是针对实现编程。
 - 使用拦截器的方法对系统权限进行初步控制（后续可以采用Shiro框架进行更新)
 - 对用户的密码采用MD5加密方法进行加密（可以采取多次MD5加密方式，和其他加密方式）
+
+## 项目页面如下
+---
+![image](https://github.com/ruanwenjun/firstproject/blob/master/SSH-CRM项目/images/login.png)
+
+![image](https://github.com/ruanwenjun/firstproject/blob/master/SSH-CRM项目/images/index.png)
