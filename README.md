@@ -5,7 +5,7 @@
 * [SSM简单整合](https://github.com/ruanwenjun/firstproject/tree/master/SSM简单整合)
 * [SSM简单练习项目--CRM](https://github.com/ruanwenjun/firstproject/tree/master/SSM简单练习项目--CRM)
 
-
+如果你想练习可以采用本项目，fork之后clone即可，觉得对你有帮助可以给一颗星>ㅂ< :sparkling_heart:
 
 ## 网络商城项目是第一个JAVAWEB项目，适合初学者练手。
 - 没有使用框架，采用servlet和JDBC进行开发
@@ -51,6 +51,5 @@
 
 
 ---
-如果你想练习可以采用本项目，fork之后clone即可，觉得对你有帮助可以给一颗星>ㅂ<
 
 所有.sql里面存放的是sql建表语句
