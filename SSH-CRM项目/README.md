@@ -13,6 +13,6 @@
 
 ## 项目页面如下
 ---
-![image](https://github.com/ruanwenjun/firstproject/blob/master/SSH-CRM项目/images/login.png)
+![image](images/login.png)
 
-![image](https://github.com/ruanwenjun/firstproject/blob/master/SSH-CRM项目/images/index.png)
+![image](images/index.png)
